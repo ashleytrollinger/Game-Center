@@ -16,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: -6vh;
-
 }
 
 .container img {
@@ -27,8 +26,8 @@
 .game-container {
     background-color: transparent;
     border-radius: 10px;
-    background-color: rgb(234, 222, 234);
-    box-shadow: 0px 0px 10px rgba(57, 3, 39, 0.989);
+    background-color: rgb(222, 229, 234);
+    box-shadow: 0px 0px 10px rgba(37, 103, 139, 0.479);
     padding: 20px;
     width: 90vw;
     margin-top: 2vh;
@@ -49,7 +48,7 @@
 
 .letter {
     padding: 25px 20px;
-    border: solid 1px #7d136c;
+    border: solid 1px #3D465E;
     cursor: pointer;
     font-size: 5vh;
     border-radius: 55px;
@@ -65,7 +64,7 @@
 }
 
 .letter.visible {
-    color: #7d136c;
+    color: #3D465E;
 }
 
 .word-description {
@@ -83,12 +82,12 @@
     margin: 0;
     margin-right: 3px;
     margin-bottom: 1vh;
-    border: solid 2px #7d136c;
+    border: solid 2px #3D465E;
     cursor: pointer;
     font-size: 2vh;
     border-radius: 15px;
     background-color: transparent;
-    color: #7d136c;
+    color: #3D465E;
     font-family: 'Basic', sans-serif;
     font-weight: 600;
     line-height: normal;
@@ -115,7 +114,7 @@
 .remove-button:hover,
 .guess-button:hover {
     color: #fff;
-    background-color: #7d136c;
+    background-color: #3D465E;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
@@ -166,12 +165,12 @@
     margin: 0;
     margin-right: 3px;
     margin-bottom: 1vh;
-    border: solid 2px #7d136c;
+    border: solid 2px #3D465E;
     cursor: pointer;
     font-size: 1.8vh;
     border-radius: 15px;
     background-color: transparent;
-    color: #7d136c;
+    color: #3D465E;
     font-family: 'Basic', sans-serif;
     font-weight: 600;
     line-height: normal;
@@ -190,7 +189,7 @@
 
 .hint-button:hover {
     color: #fff;
-    background-color: #7d136c;
+    background-color: #3D465E;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }

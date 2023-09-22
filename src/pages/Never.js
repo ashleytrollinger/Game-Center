@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from
-    'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import NHIE from '../images/NHIE.png';
@@ -8,12 +7,12 @@ import './Never.css';
 function NeverHaveIEver() {
     const [prompt, setPrompt] = useState('');
     const [rating, setRating] = useState('pg13'); // Default rating
-    const [randomSips, setRandomSips] = useState(null);
+    const [randomExercise, setRandomExercise] = useState(null);
 
     // Function to fetch a random "Never Have I Ever" prompt
     const fetchRandomPrompt = async () => {
         try {
-            const randomRating = Math.random() < 0.5 ? 'pg13' : 'r';
+            const randomRating = Math.random() < 0.5 ? 'pg13' : 'pg';
 
             const response = await fetch(`https://api.truthordarebot.xyz/api/nhie?rating=${randomRating}`);
             if (!response.ok) {
@@ -22,13 +21,19 @@ function NeverHaveIEver() {
             const data = await response.json();
             setPrompt(data.question);
 
-            // Generate a random number of sips (1-6) if the user hasn't done the prompt
+            // Define an array of possible exercises
+            const exercises = ['jumping jacks', 'push ups', 'donkey kicks', 'star jumps'];
+
+            // Generate a random index to select a random exercise
+            const randomIndex = Math.floor(Math.random() * exercises.length);
+            const randomExercise = exercises[randomIndex];
+
+            // Set the random exercise if the user hasn't done the prompt
             if (data.question && !data.done) {
-                const randomSipCount = Math.floor(Math.random() * 4) + 1;
-                setRandomSips(randomSipCount);
+                setRandomExercise(randomExercise);
             } else {
-                // Reset the random sips if the user has done the prompt
-                setRandomSips(null);
+                // Reset the random exercise if the user has done the prompt
+                setRandomExercise(null);
             }
         } catch (error) {
             console.error('Error fetching NHIE prompt:', error);
@@ -44,7 +49,7 @@ function NeverHaveIEver() {
         <>
             <Header />
             <section className='nhie'>
-            <img src={NHIE} alt="Never Have I Ever"></img>
+                <img src={NHIE} alt="Never Have I Ever"></img>
             </section>
             <div className='WYR'>
                 <div className='btn-class'>
@@ -52,14 +57,14 @@ function NeverHaveIEver() {
                 </div>
                 <div className='populated'>
                     <p >{prompt}</p>
-                    {randomSips !== null && (
-                        <p>If you've ever done this, you must take {randomSips} sip(s).</p>
+                    {randomExercise !== null && (
+                        <p>If you've ever done this, you must do {randomExercise}.</p>
                     )}
                 </div>
             </div>
             <section className='back-section'>
-                <Link to='/'>
-                    <button className='back'>←Back to Home</button>
+                <Link to='/' className='homebtn'>
+                    <button>← Back to Home</button>
                 </Link>
             </section>
         </>

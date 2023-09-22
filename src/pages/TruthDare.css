@@ -22,9 +22,9 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(234, 222, 234);
+    background-color: rgb(222, 229, 234);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(57, 3, 39, 0.989);
+    box-shadow: 0px 0px 10px rgba(37, 103, 139, 0.479);
     height: auto;
     width: 90vw;
     margin-left: 3vw;
@@ -64,7 +64,7 @@
     font-size: 3.5vh;
     font-weight: bold;
     border-radius: 45px;
-    color: #7d136c;
+    color: #3D465E;
     font-family: 'Basic', sans-serif;
 }
 
