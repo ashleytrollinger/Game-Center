@@ -8,11 +8,12 @@
     src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype')
 }
 
-.welcome-text{
+.welcome-text {
     text-align: center;
     font-family: 'Basic', sans-serif;
     font-size: 3vh;
 }
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -39,7 +40,7 @@
     border-radius: 25px;
     margin-top: 5vh;
     padding: .35em;
-    background-color: #611054;
+    background-color: #3D465E;
     color: #f4eff4;
     font-family: 'Crosant', sans-serif;
     border: none;
@@ -70,7 +71,7 @@
 
 .link-section button::after {
     background-clip: padding-box;
-    background-color: #7d136c;
+    background-color: #6b7ca9;
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;
@@ -96,7 +97,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3vh;
-    gap:3px;
+    gap: 3px;
 
 }
 
@@ -105,7 +106,7 @@
     border-radius: 25px;
     margin-top: 5vh;
     padding: .25em;
-    background-color: #611054;
+    background-color: #31384b;
     color: #f4eff4;
     font-family: 'Crosant', sans-serif;
     border: none;
@@ -136,7 +137,7 @@
 
 .wtf button::after {
     background-clip: padding-box;
-    background-color: #7d136c;
+    background-color: #57658c;
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;

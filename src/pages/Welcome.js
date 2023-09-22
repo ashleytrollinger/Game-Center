@@ -10,7 +10,7 @@ function Welcome() {
         <>
             <Header />
             <section className='welcome-text'>
-                <p>Welcome to Drink Bitch! An online game platform aimed for the girls who love to drink. </p>
+                <p>Welcome to Game Center! A collection of games made from open source APIs found on the web. </p>
             </section>
 
             <section className='link-section'>
@@ -31,11 +31,8 @@ function Welcome() {
                 </Link>
             </section>
             <section className='wtf'>
-                <Link to='/cocktails'>
-                    <button type='button'>I need a Drink</button>
-                </Link>
                 <Link to="/WTF">
-                    <button >WTF is This?</button>
+                    <button >What is This?</button>
                 </Link>
             </section>
 

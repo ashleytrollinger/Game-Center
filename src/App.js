@@ -6,7 +6,6 @@ import Question from './pages/Question';
 import Drink from './pages/Drink';
 import WTF from './pages/WTF';
 import Done from './pages/Done';
-import Cocktail from './pages/Cocktail';
 import Wordguess from './pages/Wordguess';
 import TruthOrDare from './pages/TruthDare';
 import WouldYouRather from './pages/WouldYa';
@@ -23,7 +22,7 @@ function App() {
           <Route path="/drink" element={<Drink />} />
           <Route path="/WTF" element={<WTF />} />
           <Route path="/finished" element={<Done />} />
-          <Route path="/cocktails" element={<Cocktail />} />
+
           <Route path="/wordGuess" element={<Wordguess />} />
           <Route path="/truthOrDare" element={<TruthOrDare />} /> 
           <Route path="/wouldYouRather" element={<WouldYouRather />} />
