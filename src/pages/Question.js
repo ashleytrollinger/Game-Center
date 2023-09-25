@@ -64,7 +64,7 @@ function Question() {
             setIsAnswerCorrect(null);
             setTimerKey(timerKey + 1);
         } else {
-            navigate('/finished')
+            navigate('/setup')
             // Handle end of questions, e.g., show a completion message
         }
     };
